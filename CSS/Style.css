@@ -1,0 +1,22 @@
+.border {
+border-style: solid;
+border-width: 2px;
+border-radius: 12px;
+border-color: #75e5f8;
+}
+
+h4 {
+color: #ef76c3;
+}
+
+#box, #result {
+padding:10px;
+text-align:center;
+background-color: #fabe66;
+border: 1px;
+}
+
+#result {
+padding:50px;
+display:none;
+}
