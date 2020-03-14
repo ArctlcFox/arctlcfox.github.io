@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Me</title>
+</head>
+<body>
+
+    <!--Bootstrap and jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="CSS/Style.css"> 
+
+ <img src="Images/Logo.png"> 
+
+ <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+<div class="container-fluid">
+
+<div>
+<ul class="nav navbar-nav">
+<li class="nav-item"><a class="nav-link" href="index.html"><h4>Home</h4></a></li>
+<li class="nav-item"><a class="nav-link" href="About.html"><h4>About</h4></a></li>
+<li class="nav-item"><a class="nav-link" href="Projects.html"><h4>Projects</h4></a></li>
+</ul>
+</div>    
+
+</div>
+ </nav>
+
+<h1 class="text-white">Magic 8 Ball</h1>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="EightBall">
+<br><br><h1>8</h1>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<input type="text" id="Livinginabox">
+<br>
+<button class="button">Ask</button>
+
+<p id="asked" class="text-white"></p>
+<p id="answer" class="text-white"></p>
+
+<!--Here-->
+<script>
+    var responses=["Ask again later", "Better not tell you now", "Cannot predict now", 
+    "Concentrate and ask again", "My reply is no", "Yes", "No", "Without a doubt", 
+    "The stars say no", "The stars say yes", "Very doubtful", "Signs point to yes",
+    "You may rely on it"];
+    
+    $(function() {
+    $("button").click(function() {
+    $("#answer").text(responses[Math.floor(Math.random() * responses.length)]);
+    });
+    });
+    
+    </script>
+
+<style>
+
+.EightBall {
+height: 150px;
+width: 150px;    
+background-color: white;
+border-radius: 50%;
+box-shadow: 0 0 0 100px black;
+text-align:center;
+};
+
+
+</style>
+
+</div>
+</div>
+</body>
+</html>
